@@ -1,0 +1,75 @@
+@import 'variables';
+@import 'mixins';
+
+body{
+    font-weight: 400;
+    color: #585757;
+}
+.header{
+    border-top: 5px solid $pcolor;
+}
+.social-icon{
+    li{
+        a{
+            width:auto;
+            height: auto;
+            line-height: initial;
+            border: 0;
+        }
+        i.fa{
+            color: white;
+            height: 34px;
+            width: 34px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &:hover{
+                color: black;
+                background-color: #fff !important;
+                border: 1px solid #aaa;
+            }
+        }
+        i.fa.fa-facebook{
+            background-color: $facebook;
+        }
+        i.fa.fa-twitter{
+            background-color: $twitter;
+        }
+        i.fa.fa-dribbble{
+            background-color: $dribbble;
+        }
+        i.fa.fa-behance{
+            background-color: $behance;
+        }
+        i.fa.fa-linkedin{
+            background-color: $linkedin;
+        }
+        
+        
+    }
+}
+
+.header .name-wrapper span{
+    color: $pcolor;
+}
+.section-title h2{
+    font-family: $pfont;
+    color: $pcolor;
+}
+.left-border {
+    border-left: 2px solid $pcolor;
+//    border-bottom: 2px solid $pcolor;
+    padding-left:14px;
+    box-shadow: 3px 10px 14px -4px #efefef;
+}
+.progress-item .progress-percent{
+    background-color: $pcolor;
+    
+}
+.progress-item .progress-bar{
+    background-color: #c1c1c1;
+}
+.progress-item .progress-title{
+    font-size: 14px;
+}
